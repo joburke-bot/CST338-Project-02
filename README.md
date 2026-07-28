@@ -20,7 +20,6 @@ Issues, branches and PRs get linked here as we go.
 
 - Slice 4, Leaderboard and History - cut, only 3 of us
 - Slice 5, Study Mode and Tagging - cut, only 3 of us
-- Accounts: no password reset, no extra roles
 - Question Bank: no media questions, no difficulty levels, no CSV import (doing the REST import instead)
 
 If we finish early we can pull one of these back for extra credit.
