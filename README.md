@@ -1,53 +1,49 @@
-<!--
-CST 338 Project 2 — README template.
-Copy this file into the ROOT of your team's repository as README.md and keep it current.
-This README is your project dashboard: it is the first thing the instructor reads when
-grading, and a working, up-to-date README is part of your integration score.
+# StudyDeck
 
-GitHub Issues are your LIVE tracker — every slice task, enhancement, and scope decision is
-an Issue: assigned to its owner, labeled (slice-1, testing, enhancement, will-not-do,
-extra-credit), and closed by a PR via "Closes #N". The tables below link into those Issues
-and PRs. Replace every <placeholder> and delete this comment before you submit.
--->
+A JavaFX trivia and study app. Make an account, browse questions by category, take a quiz, get a score.
 
-# <App Name>
+CST 338 Project 2 - Team NAiDev
 
-<One-line description.> CST 338 Project 2 — Team **<Team Name>**.
+## Slices
 
-## Team & Slice Ownership
-| Slice | Owner | GitHub username | Issues | Branch(es) | PR(s) | Enhancement chosen | Status |
-|-------|-------|-----------------|--------|------------|-------|--------------------|--------|
-| 1 — Accounts (required)| | | | |  |  | planned |
-| 2 — <Slice> feature slice 2| | | | | | | planned |
-| 3 — <Slice> feature slice 3| | | | | | | planned |
-| 4 — <Slice> feature slice 4| | | | | | | planned |
+We are 3 people, so we build 3 of the 5 slices. Accounts is required.
 
-_Status values: planned · in-progress · complete_
+| Slice | Owner | Github | Enhancement | Status |
+|---|---|---|---|---|
+| 1 - Accounts | Joshua Burke | joburke-bot | | planned |
+| 2 - Question Bank | William Delgado | williamzdelgado | REST API import (Open Trivia DB) | planned |
+| 3 - Quiz Engine | Allen Orozco | allorozco-eng | | planned |
 
-## WILL NOT DO (declared scope cuts)
-_Slices and beyond-scope items we are consciously NOT building. Move an item to a tracked
-Issue if the team later decides to attempt it for extra credit._
+Issues, branches and PRs get linked here as we go.
 
-- Slice 5 — <name>: not building (team size).
-- <Slice 4>: <beyond-scope item> — out of scope.
+## WILL NOT DO
 
-## Code Review Log
-| PR | Author | Human reviewer(s) | AI review (link) | Outcome |
-|----|--------|-------------------|------------------|---------|
-|  | | | <link or commit> | |
+- Slice 4, Leaderboard and History - cut, only 3 of us
+- Slice 5, Study Mode and Tagging - cut, only 3 of us
+- Accounts: no password reset, no extra roles
+- Question Bank: no media questions, no difficulty levels, no CSV import (doing the REST import instead)
 
-## AI Usage Log
-- **AI-drafted tests:** <link to TESTING.md / commit> — per owner.
-- **AI code reviews:** <PR link + adjudication note> — per owner.
+If we finish early we can pull one of these back for extra credit.
 
-## Extra Credit Log
-| Item | Who | Evidence (Issue/PR) |
-|------|-----|---------------------|
-|  | |  |
+## Code reviews
 
-## Build & Run
+| PR | Author | Reviewer | AI review | Outcome |
+|---|---|---|---|---|
+
+## AI usage
+
+Each of us logs our AI-drafted tests in TESTING.md and links our AI code review PR here.
+
+## Extra credit
+
+| What | Who | Link |
+|---|---|---|
+
+## Build and run
+
 ```
-./gradlew run        # launch the app
-./gradlew test       # run the test suite
+./gradlew run
+./gradlew test
 ```
-Requirements: JDK <version>, JavaFX <version>. Any setup notes go here.
+
+Needs JDK 25 and JavaFX 25. The gradle wrapper is committed so you don't need gradle installed. Open the folder in IntelliJ and let it import the gradle build.
