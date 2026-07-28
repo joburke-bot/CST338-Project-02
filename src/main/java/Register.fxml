@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<!--
+ * Course: CST338 - Software Design
+ * Project: Trivia and Study Application
+ * Component: Slice 1 (Accounts) - Graphical Interface Registration Blueprint
+ *
+ * Purpose: Blueprints the visual schema properties for the student profile creation window.
+ * Maps text layout prompts, isolates alphanumeric credentials inputs, presents reactive
+ * validation error alerts, and hooks event pathways into the underlying service layer routing scripts.
+ *
+ * Author: [Your Name]
+ * Date: July 28, 2026
+-->
+<VBox alignment="CENTER" spacing="15.0" xmlns="http://javafx.com" xmlns:fx="http://javafx.com">
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+    </padding>
+
+    <Label text="Create An Account" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <VBox spacing="5.0">
+        <Label text="Choose Username:"/>
+        <TextField fx:id="txtNewUsername" promptText="Enter a unique username"/>
+    </VBox>
+
+    <VBox spacing="5.0">
+        <Label text="Password (min 6 chars):"/>
+        <PasswordField fx:id="txtNewPassword" promptText="Enter password"/>
+    </VBox>
+
+    <VBox spacing="5.0">
+        <Label text="Confirm Password:"/>
+        <PasswordField fx:id="txtConfirmPassword" promptText="Repeat password"/>
+    </VBox>
+
+    <Label fx:id="lblValidationMessage" textFill="RED" visible="false" wrapText="true"/>
+
+    <HBox spacing="10.0" alignment="CENTER">
+        <Button text="Register" onAction="#handleSubmitRegistration" prefWidth="100.0"/>
+        <Button text="Cancel" onAction="#handleCancel" prefWidth="100.0"/>
+    </HBox>
+</VBox>
