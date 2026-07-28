@@ -10,7 +10,7 @@ We are 3 people, so we build 3 of the 5 slices. Accounts is required.
 
 | Slice | Owner | Github | Enhancement | Status |
 |---|---|---|---|---|
-| 1 - Accounts | Joshua Burke | joburke-bot | Trivia Account Login | planned |
+| 1 - Accounts | Joshua Burke | joburke-bot | Trivia Account Login | complete |
 | 2 - Question Bank | William Delgado | williamzdelgado | REST API import (Open Trivia DB) | planned |
 | 3 - Quiz Engine | Allen Orozco | allorozco-eng | | planned |
 
