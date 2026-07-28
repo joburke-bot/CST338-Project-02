@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<!--
+ * Course: CST338 - Software Design
+ * Project: Trivia and Study Application
+ * Component: Slice 1 (Accounts) - Graphical Interface Layout Blueprint
+ *
+ * Purpose: Defines the XML layout graph tree structure for the main user login view.
+ * Formats user input nodes, binds input element hooks securely, displays real-time
+ * authentication warning banners, and exposes macro trigger buttons mapped directly
+ * to handling loops inside the active structural logic controller.
+ *
+ * Author: Josh Burke
+ * Date: July 28, 2026
+-->
+
+<VBox alignment="CENTER" spacing="15.0" xmlns="http://javafx.com" xmlns:fx="http://javafx.com">
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+    </padding>
+
+    <Label text="Trivia Study Portal" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <VBox spacing="5.0">
+        <Label text="Username:"/>
+        <TextField fx:id="txtUsername" promptText="Enter username"/>
+    </VBox>
+
+    <VBox spacing="5.0">
+        <Label text="Password:"/>
+        <PasswordField fx:id="txtPassword" promptText="Enter password"/>
+    </VBox>
+
+    <Label fx:id="lblErrorMessage" textFill="RED" visible="false" wrapText="true"/>
+
+    <HBox spacing="10.0" alignment="CENTER">
+        <Button text="Login" onAction="#handleLogin" prefWidth="100.0"/>
+        <Button text="Sign Up" onAction="#handleNavigateToRegister" prefWidth="100.0"/>
+    </HBox>
+</VBox>
