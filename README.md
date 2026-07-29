@@ -12,7 +12,7 @@ We are 3 people, so we build 3 of the 5 slices. Accounts is required.
 |---|---|---|---|---|
 | 1 - Accounts | Joshua Burke | joburke-bot | Trivia Account Login | complete |
 | 2 - Question Bank | William Delgado | williamzdelgado | REST API import (Open Trivia DB) | planned |
-| 3 - Quiz Engine | Allen Orozco | allorozco-eng | | planned |
+| 3 - Quiz Engine | Allen Orozco | allorozco-eng | JavaFX Data Binding| planned |
 
 Issues, branches and PRs get linked here as we go.
 
